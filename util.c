@@ -1,7 +1,6 @@
 /************************************************************/
 /* File: util.c                                             */
 /* Implementation of the utilities.                         */
-/* Author: Minjie Zha                                       */
 /************************************************************/
 
 #include "globals.h"
@@ -93,7 +92,7 @@ void printExpression(TreeNode* expr) {
             fprintf(out,"%s",expr->name);
             break;
         case AbsK:
-            fprintf(out,"(lambda ");
+            fprintf(out,"(\\");
             printExpression(expr->children[0]);
             fprintf(out," ");
             printExpression(expr->children[1]);

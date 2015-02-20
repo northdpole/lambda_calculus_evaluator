@@ -2,7 +2,6 @@
 /* File: globals.h                                             */
 /* Definition of types and variables. This should be included  */
 /* before any other included files.                            */
-/* Author: Minjie Zha                                          */
 /***************************************************************/
 
 #ifndef _GLOBALS_H_

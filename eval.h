@@ -1,7 +1,6 @@
 /**************************************************************/
 /* File: eval.h                                               */
 /* Definition of the expression evaluation.                   */
-/* Author: Minjie Zha                                         */
 /**************************************************************/
 #ifndef _EVAL_H_
 #define _EVAL_H_

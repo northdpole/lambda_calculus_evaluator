@@ -1,7 +1,6 @@
 /*****************************************************************/
 /* File: test.c                                                  */
-/* Test driver of the lambda calculus evaluator.                 */
-/* Author: Minjie Zha                                            */
+/* Test driver of the \\ calculus evaluator.                 */
 /*****************************************************************/
 
 #include "globals.h"
@@ -19,29 +18,29 @@ int main(int argc, char* argv[]) {
     out = stdout;
     errOut = stderr;
     
-    char* exprs[] = {"x","X","(lambda x x)","(lambda x y)",
-                    "(lambda x (lambda y y))",
-                    "(lambda x (lambda y x))",
-                    "(lambda x (lambda y y) z)",
+    char* exprs[] = {"x","X","(\\ x x)","(\\ x y)",
+                    "(\\ x (\\ y y))",
+                    "(\\ x (\\ y x))",
+                    "(\\ x (\\ y y) z)",
                     "x y",
-                    "x (lambda y y)",
-                    "(lambda x x) y",
-                    "(lambda x x) (lambda y y)",
-                    "(lambda x x) (lambda y y) z",
-                    "(lambda x x x)",
-                    "(lambda x x x) (lambda x x x)",
-                    "(lambda x (lambda x x))",
-                    "(lambda x (lambda y x))",
-                    "(lambda x (lambda y y))",
-                    "(lambda p (lambda q p q p))",
-                    "(lambda p (lambda q p p q))",
-                    "(lambda p (lambda a (lambda b p b a)))",
-                    "(lambda p (lambda a (lambda b p a b)))",
-                    "(lambda x (lambda y (lambda f f x y)))",
-                    "(lambda p p (lambda x (lambda y x)))",
-                    "(lambda p p (lambda x (lambda y y)))",
-                    "(lambda x (lambda y (lambda z y)))",
-                    "(lambda p (lambda x (lambda y (lambda a (lambda b b)))))"
+                    "x (\\ y y)",
+                    "(\\ x x) y",
+                    "(\\ x x) (\\ y y)",
+                    "(\\ x x) (\\ y y) z",
+                    "(\\ x x x)",
+                    "(\\ x x x) (\\ x x x)",
+                    "(\\ x (\\ x x))",
+                    "(\\ x (\\ y x))",
+                    "(\\ x (\\ y y))",
+                    "(\\ p (\\ q p q p))",
+                    "(\\ p (\\ q p p q))",
+                    "(\\ p (\\ a (\\ b p b a)))",
+                    "(\\ p (\\ a (\\ b p a b)))",
+                    "(\\ x (\\ y (\\ f f x y)))",
+                    "(\\ p p (\\ x (\\ y x)))",
+                    "(\\ p p (\\ x (\\ y y)))",
+                    "(\\ x (\\ y (\\ z y)))",
+                    "(\\ p (\\ x (\\ y (\\ a (\\ b b)))))"
                     };
     int i;
     for(i=0;i<26;i++) {

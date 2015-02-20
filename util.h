@@ -1,7 +1,6 @@
 /*************************************************************/
 /* File: util.h                                              */
 /* Definition of utilities for lambda calculus evaluator.    */
-/* Author: Minjie Zha                                        */
 /*************************************************************/
 
 #ifndef _UTIL_H_

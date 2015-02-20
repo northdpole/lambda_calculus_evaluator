@@ -1,7 +1,6 @@
 /***************************************************************/
 /* File: eval.c                                                */
 /* Implementation of evaluation the expression.                */
-/* Author: Minjie Zha                                          */
 /***************************************************************/
 #include "globals.h"
 #include "util.h"

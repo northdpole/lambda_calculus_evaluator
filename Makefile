@@ -1,4 +1,5 @@
-CC = gcc
+CC = gcc $(ARGS)
+ARGS = -g 
 LEX = flex
 YACC = bison
 OBJS = scanner.o parser.o eval.o util.o varset.o
@@ -37,4 +38,4 @@ varset.o: varset.h varset.c
 	$(CC) -c varset.c
 
 clean:
-	rm $(OBJS)
+	rm $(OBJS) y.tab.* lex.yy.c

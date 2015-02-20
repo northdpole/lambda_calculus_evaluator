@@ -1,21 +1,16 @@
-/************************************************************/
-/* File: eval.l                                             */
-/* Lex definition file for labmda calculus evaluator.       */
-/* Author: Minjie Zha                                       */
-/************************************************************/
-
 %{
 #include "globals.h"
 %}
 
-lambda      "lambda"
-identifier  [a-z]
+lambda      "\\"
+identifier  [A-Za-z]+
 whitespace  [ \t]+
 newline     [\r\n]+
 
 %%
 
     /* reserved words */
+{lambda}{identifier}"."  {return LAMBDA_ID;}
 {lambda}        {return LAMBDA;}
 
     /* identifier */

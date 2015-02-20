@@ -2,7 +2,6 @@
 /* File: main.c                                                  */
 /* Implements the interactive interface of this lambda calculus  */
 /* evaluator.                                                    */
-/* Author: Minjie Zha                                            */
 /*****************************************************************/
 
 #include "globals.h"
@@ -31,8 +30,9 @@ int main(int argc, char* argv[]) {
         fprintf(out,"> ");
         fgets(buff,BUFF_SIZE-1,in);
         yy_scan_string(buff);
-        yyparse();
-        if(DEBUG) printTree(tree);
+	yyparse();
+        
+	if(DEBUG) printTree(tree);
         
         tree = evaluate(tree);
         fprintf(out,"-> ");
