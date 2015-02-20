@@ -1,0 +1,12 @@
+A very basic lambda calculus evaluator,
+
+it evaluates alpha and beta reductions
+and supports the following syntax
+ Expression := identifier 
+                | (\identifier. Expression)
+                | Expression Expression
+
+e.g. (\x. x) (\y. y) z
+        ->  z
+
+It's a fork of https://github.com/magic003/lambda_calculus_evaluator adapted for a course project (yes we're allowed to do  (yes we're allowed to do that)
